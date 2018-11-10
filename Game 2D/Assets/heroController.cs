@@ -14,32 +14,35 @@ public class heroController : MonoBehaviour {
         if (Input.GetKey("up"))
         {
             moveController.Move(0, false, true);
-            animator.SetBool("estaPulando", true);
+            animator.SetBool("isJumping",true);
+            
         }
         else
         {
-            animator.SetBool("estaPulando", false);
+            animator.SetBool("isJumping",false);
         }
-        
 
         if (Input.GetKey("right"))
         {
             moveController.Move(1 * velocidade, false, false);
-            animator.SetBool("estaCorrendo", true);
+            animator.SetBool("isRunning",true);
+            
         }
         else
         {
+            
             if (Input.GetKey("left"))
             {
                 moveController.Move(-1 * velocidade, false, false);
-                animator.SetBool("estaCorrendo", true);
+                animator.SetBool("isRunning",true);
+                
             }
             else
             {
-                animator.SetBool("estaCorrendo", false);
+                animator.SetBool("isRunning",false);
             }
         }
-
+        
         
         
     }
