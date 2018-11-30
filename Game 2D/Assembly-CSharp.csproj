@@ -62,9 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\coinController.cs" />
+    <Compile Include="Assets\HealthUI.cs" />
     <Compile Include="Assets\heroController.cs" />
-    <Compile Include="Assets\HeroControllerTest.cs" />
-    <Compile Include="Assets\MaceController.cs" />
+    <Compile Include="Assets\HUD.cs" />
     <Compile Include="Assets\scri.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\scrollingScript.cs" />
